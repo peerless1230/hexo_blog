@@ -5,7 +5,7 @@ tags:
     - 笔记
 ---
 
-之前在`Openstack Horizon`里面，嵌入了`xterm + websocket`后，在调试验证功能后，部署到了`apache`中，`dashboard`的访问没问题，却无法建立`websocket`连接。（类似的Demo已放在了[Github]()上）
+之前在`Openstack Horizon`里面，嵌入了`xterm + websocket`后，在调试验证功能后，部署到了`apache`中，`dashboard`的访问没问题，却无法建立`websocket`连接。（类似的Demo已放在了[Github](https://github.com/peerless1230/xterm_django)上）
 并且，在该`apache`服务器上，通过`django`的`manage.py runserver`调试，`websocket`功能依旧没有问题。
 那么，问题应该是出在`apache`或者`mod_wsgi`的请求转发上。
 
